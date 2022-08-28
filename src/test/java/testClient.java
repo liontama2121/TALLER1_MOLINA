@@ -17,7 +17,7 @@ public class testClient {
      */
     @Test
     public void PruebaIgualHerokuAlphaIBMVSAlphaIBM() throws IOException, JSONException {
-        String ExpectedJSON="",site="https://sparkheroku.herokuapp.com/facadealpha?st=IBM", HerokuJSON="";
+        String ExpectedJSON="",site="https://tallermolina.herokuapp.com/facadealpha?st=IBM", HerokuJSON="";
         HTTPservice stockService = CurrentServiceInstance.getInstance().getAlphahttpservice();
         ExpectedJSON = stockService.TimeSeriesDaily();
         HerokuJSON = HTTPheroku.HerokuJSON(site);
@@ -31,7 +31,7 @@ public class testClient {
      */
     @Test
     public void PruebaDiferenteHerokuAlphafbVSAlphaMSTF() throws IOException, JSONException{
-        String ExpectedJSON="",site="https://sparkheroku.herokuapp.com/facadealpha?st=MSTF", HerokuJSON="";
+        String ExpectedJSON="",site="https://tallermolina.herokuapp.com/facadealpha?st=MSTF", HerokuJSON="";
         HTTPservice stockService = CurrentServiceInstance.getInstance().getAlphahttpservice();
         ExpectedJSON = stockService.TimeSeriesDaily();
         HerokuJSON = HTTPheroku.HerokuJSON(site);
@@ -45,7 +45,7 @@ public class testClient {
      */
     @Test
     public void PruebaIgualHerokuAlphaGOOGVSAlphaGOOG() throws IOException, JSONException{
-        String ExpectedJSON="",site="https://sparkheroku.herokuapp.com/facadealpha?st=GOOG", HerokuJSON="";
+        String ExpectedJSON="",site="https://tallermolina.herokuapp.com/facadealpha?st=GOOG", HerokuJSON="";
         HTTPservice stockService = CurrentServiceInstance.getInstance().getAlphahttpservice();
         stockService.setStock("GOOG");
         ExpectedJSON = stockService.TimeSeriesDaily();
