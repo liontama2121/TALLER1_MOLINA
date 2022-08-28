@@ -1,0 +1,7 @@
+edu\escuelaing\arep\sparkheroku\CurrentServiceInstance.class
+edu\escuelaing\arep\sparkheroku\JSClient.class
+edu\escuelaing\arep\sparkheroku\App.class
+edu\escuelaing\arep\sparkheroku\Iexhttpservice.class
+edu\escuelaing\arep\sparkheroku\HTTPheroku.class
+edu\escuelaing\arep\sparkheroku\Alphahttpservice.class
+edu\escuelaing\arep\sparkheroku\HTTPservice.class
