@@ -1,1 +1,1 @@
-web java -Dserver.port=$PORT target/classes:target/dependency/* edu.esculaing.arep.sparkheroku.App
+web java $JAVA_OPTS -cp target/classes:target/dependency/* edu.escuelaing.arep.sparkheroku.App
