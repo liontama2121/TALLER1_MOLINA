@@ -11,6 +11,10 @@ import spark.Request;
 import spark.Response;
 
 public class App {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         port(getPort());;
         get("/facadealpha", "application/json", (req, res) -> facadeAlpha(req,res));
@@ -18,6 +22,13 @@ public class App {
         get("/JSClient", (req, res) -> facadeJSClient(req,res));
 
     }
+
+    /**
+     *
+     * @param req
+     * @param res
+     * @return
+     */
     private static String  facadeJSClient(Request req, Response res){
         String api = req.queryParams("api");
         String stock = req.queryParams("st");
